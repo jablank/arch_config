@@ -1,0 +1,69 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo":  "arch_small",
+  "display": {
+    "separator": " : "
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "┌──────────────────────────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": "  ◈",
+      "format": "{2}",
+      "keyColor": "#C48E96"
+    },
+    {
+      "type": "kernel",
+      "key": "  ◈",
+      "format": "{2}",
+      "keyColor": "#C098A5"
+    },
+    {
+      "type": "host",
+      "key": "  ◈",
+      "format": "{2}",
+      "keyColor": "#C48E96"
+    },
+    {
+      "type": "cpu",
+      "key": "  ◈",
+      "keyColor": "#BCB8B4"
+    },
+    {
+      "type": "shell",
+      "key": "  ◈",
+      "keyColor": "#B4B6D2"
+    },
+    {
+      "type": "wm",
+      "key": "  ◈",
+      "format": "{1} {5}",
+      "keyColor": "#ACC2EE"
+    },
+    {
+      "type": "de",
+      "key": "  ◈",
+      "keyColor": "#A9D1FF"
+    }, 
+    {
+      "type": "command",
+      "key": "  ◈",
+      "folders": "/",
+      "keyColor": "#A9DFFF",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); days_difference=$(( (current - birth_install) / 86400 )); echo \"$days_difference days\""
+    },
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────────┘"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    },
+    "break"
+  ]
+}
