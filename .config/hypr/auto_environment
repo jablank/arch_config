@@ -3,11 +3,12 @@
 #################
 
 exec-once = hypridle &
-# exec-once = xdg-desktop-portal-gtk &
 exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
-# exec-once = systemctl --user enable --now hyprpolkitagent.service &
+exec-once = systemctl --user start hyprpolkitagent
 exec-once = hyprctl setcursor Bibata-Modern-Ice 32
+
 # mako is D-Bus activated
+# exec-once = xdg-desktop-portal-gtk &
 
 exec-once = waybar &
 exec-once = swaybg -i /home/jab/Pictures/macos_mountainlion.jpg
@@ -30,8 +31,9 @@ env = HYPRCURSOR_SIZE,32
 env = XCURSOR_THEME,Bibata-Modern-Ice
 env = XCURSOR_SIZE,35
 
+#https://wiki.archlinux.org/title/Dark_mode_switching
 env = QT_QPA_PLATFORMTHEME=qt6ct
-# env = GTK_THEME=Adwaita-dark
+env = GTK_THEME=Adwaita:dark
 env = GTK_APPLICATION_PREFER_DARK_THEME=1
 
 
