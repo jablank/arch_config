@@ -3,12 +3,13 @@
 #################
 
 exec-once = hypridle &
-exec-once = xdg-desktop-portal-gtk &
+# exec-once = xdg-desktop-portal-gtk &
 exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
-exec-once = systemctl --user enable --now hyprpolkitagent.service &
+# exec-once = systemctl --user enable --now hyprpolkitagent.service &
 exec-once = hyprctl setcursor Bibata-Modern-Ice 32
 # mako is D-Bus activated
 
+exec-once = waybar &
 exec-once = swaybg -i /home/jab/Pictures/macos_mountainlion.jpg
 
 #############################
@@ -19,7 +20,7 @@ env = XDG_CURRENT_DESKTOP,Hyprland
 env = XDG_SESSION_TYPE,wayland
 env = XDG_SESSION_DESKTOP,Hyprland
 # Force-start and prioritize the Hyprland Portal
-exec-once = killall -q xdg-desktop-portal-hyprland; killall -q xdg-desktop-portal; /usr/lib/xdg-desktop-portal-hyprland & /usr/lib/xdg-desktop-portal
+# exec-once = killall -q xdg-desktop-portal-hyprland; killall -q xdg-desktop-portal; /usr/lib/xdg-desktop-portal-hyprland & /usr/lib/xdg-desktop-portal
 
 env = HYPRCURSOR_THEME,Bibata-Modern-Ice
 env = HYPRCURSOR_SIZE,32
