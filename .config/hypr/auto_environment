@@ -3,7 +3,8 @@
 #################
 ##  WALLPAPER  ##
 #################
-exec-once = swaybg -i /home/jab/Pictures/forest_rock.jpg
+
+exec-once = swaybg -i /home/jab/Pictures/forest_rock.jpeg
 
 
 exec-once = hypridle &
