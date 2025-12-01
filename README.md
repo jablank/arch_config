@@ -14,7 +14,7 @@
 ####
 
 ```bash
-# main, enable emptty, ufw and tuned profile
+# main, enable emptty, zsh newuser, ufw and tuned profile
 emptty zsh zsh-autosuggestions zoxide tuned ufw \
 hyprpolkitagent gnome-keyring \
 openresolv wireguard-tools \
@@ -36,17 +36,13 @@ starship \
 jq bc
 
 ```
-
-
+theme and env
 ```bash
 exec-once = waybar &
 exec-once = hypridle &
-exec-once = swayosd-server &
+exec-once = swayosd-server & # uses ~100MB RAM
 exec-once = systemctl --user start hyprpolkitagent
 exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
-```
-theme and env
-```bash
 exec-once = hyprctl setcursor Bibata-Modern-Ice 32
 ```
 ### **low movement preset**
