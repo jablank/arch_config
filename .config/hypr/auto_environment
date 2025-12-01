@@ -8,16 +8,15 @@
 #################
 
 exec-once = swaybg -i /home/jab/Pictures/forest_rock.jpeg
+exec-once = waybar &
 
 exec-once = hypridle &
-exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
+exec-once = swayosd-server &
 exec-once = systemctl --user start hyprpolkitagent
 exec-once = hyprctl setcursor Bibata-Modern-Ice 32
 
 # mako is D-Bus activated
-# exec-once = xdg-desktop-portal-gtk &
-
-exec-once = waybar &
+exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
 
 #############################
 ### ENVIRONMENT VARIABLES ###
