@@ -1,13 +1,13 @@
 
 ## **defaults**
-- 🪂 login | emptty with default user
-- 🌠 shell |  zsh with zoxide, autosuggest, starship
-- 🗝️ polkit |  keyring-gnome hyprpolkitagent 
-- 🔋 power  |  ```tuned-adm profile latency-performance``` + hypridle hyprlock
-- 🔥 firewall |  ufw and openresolv for dns
-- 🔔 notifier | mako and swayosd for input popups
-- 🍫 status bars |  rofi, waybar 
-- 🔆 screen |  ddcutil, i2c-tools, bash alias sunX x=0-100.
+-  login | emptty with default user
+-  shell |  zsh with zoxide, autosuggest, starship
+-  polkit |  keyring-gnome hyprpolkitagent 
+-  power  |  ```tuned-adm profile latency-performance``` + hypridle hyprlock
+-  firewall |  ufw and openresolv for dns
+-  notifier | mako and swayosd for input popups
+-  status bars |  rofi, waybar 
+-  screen |  ddcutil, i2c-tools, bash alias sunX x=0-100.
 #### 
 #### 
 #### 
