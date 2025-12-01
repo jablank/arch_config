@@ -1,11 +1,13 @@
 #################
 ### AUTOSTART ###
-#################
 ##  WALLPAPER  ##
+#    PORTALS    #
+##     ENV     ##
+###    M&K    ###
+####  TILING ####
 #################
 
 exec-once = swaybg -i /home/jab/Pictures/forest_rock.jpeg
-
 
 exec-once = hypridle &
 exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
