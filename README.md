@@ -1,4 +1,4 @@
-### **jimmy neutron**
+### **jimmy neutron low quality preset**
 - togglefloating resize script
 - fade only animations
 ```bash
