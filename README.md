@@ -1,7 +1,7 @@
 ### **jimmy neutron**
 - togglefloating resize script
 - fade only animations
-- ```bash
+```bash
   decoration {
   rounding = 0
   active_opacity = 1.0
