@@ -1,6 +1,10 @@
 #################
 ### AUTOSTART ###
 #################
+##  WALLPAPER  ##
+#################
+exec-once = swaybg -i /home/jab/Pictures/forest_rock.jpg
+
 
 exec-once = hypridle &
 exec-once = /usr/bin/gnome-keyring-daemon --start --components=secrets &
@@ -11,7 +15,6 @@ exec-once = hyprctl setcursor Bibata-Modern-Ice 32
 # exec-once = xdg-desktop-portal-gtk &
 
 exec-once = waybar &
-exec-once = swaybg -i /home/jab/Pictures/macos_mountainlion.jpg
 
 #############################
 ### ENVIRONMENT VARIABLES ###
