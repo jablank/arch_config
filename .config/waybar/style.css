@@ -23,16 +23,22 @@
     color: @foreground-inactive;
 }
 
-#memory,
-#custom-platform-profile {
-    padding-left: 1em
+#wireplumber {
+    padding: 0 6px; 
+    background-color: transparent;
+}
+#network {
+    padding: 0 6px; 
+    background-color: transparent;
+}
+#memory {
+    padding: 0 0px; 
+    background-color: transparent; 
 }
 
-#wireplumber,
 #battery,
 #idle_inhibitor,
 #language,
-#network,
 #bluetooth,
 #tray {
     padding-right: 1em 

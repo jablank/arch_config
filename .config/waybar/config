@@ -6,7 +6,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "wireplumber"],
+    "modules-right": ["tray", "memory", "network", "wireplumber"],
 
     "hyprland/workspaces": {
         "format": "<span size='larger'>{icon}</span>",
@@ -28,33 +28,46 @@
     "clock": {
         "format": "{:%Y %b %d  %H:%M}"
     },
+    
+    "tray": {
+        "icon-size": 16,
+        "spacing": 16
+    },
+    
+"wireplumber": {
+    "format": "{icon} {volume}%",
+    "format-muted": " Muted", // Unicode for speaker-off
+    "tooltip": true,
+    "format-icons": {
+        "headphone": "", // Unicode for music note/headphone
+        "phone": "",     // Unicode for phone
+        "portable": "",  // Unicode for phone/portable
+        "car": "",      // Unicode for car
+        "default": ["", "", ""] // Unicodes for volume low, medium, high
+    },
+    // Optional: map to specific device
+    "on-click": "pavucontrol"
+},
 
-    "wireplumber": {
-        "format": "{volume}%",
-        "max-volume": 100,
-        "on-click": "pavucontrol",
-        "scroll-step": 4
+"memory": {
+    "interval": 30,
+    "format": "\uf4bc {used:0.1f}G "
     },
 
 
-    "memory": {
-        "interval": 30,
-        "format": "\uf4bc  {used:0.1f}G"
+"network": {
+    "format-icons": {
+        "default": "󰤟", // Nerd Font Wi-Fi low
+        "none": "󰤯",    // Nerd Font Wi-Fi disabled
+        "full": "󰤨"     // Nerd Font Wi-Fi full
     },
+    "format-wifi": "{icon} {essid}",
+    "format-ethernet": "{icon} {ipaddr}",
+},
+
 
     "temperature": {
         "format": "{temperatureC}°C"
-    },
-
-    "network": {
-        "format": "",
-        "format-ethernet": "\udb83\udc9d",
-        "format-wifi": "{icon}",
-        "format-disconnected": "\udb83\udc9c",
-        "format-icons": ["\udb82\udd2f", "\udb82\udd1f", "\udb82\udd22", "\udb82\udd25", "\udb82\udd28"],
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "{ifname}",
-        "tooltip-format-disconnected": "Disconnected",
     },
 
     "bluetooth": {
@@ -68,11 +81,6 @@
 
     "hyprland/language": {
         "format": "{short}"
-    },
-
-    "tray": {
-        "icon-size": 16,
-        "spacing": 16
     },
 
     "custom/platform-profile": {
