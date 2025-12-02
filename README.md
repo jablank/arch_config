@@ -3,7 +3,7 @@
 
 - **dm** | [emptty](https://github.com/tvrzna/emptty)
 - **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
-- **keys** | keyring-gnome, hyprpolkitagent
+- **security** | keyring-gnome, hyprpolkitagent, cliphist
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
 - **network** | [ufw firewall](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
 - **screen** | grim, slurp, ddcutil, i2c-tools
@@ -25,15 +25,17 @@ core++ >
     zsh zsh-autosuggestions zoxide tuned  
      
 # security
-    ufw openresolv wireguard-tools
-    hyprpolkitagent gnome-keyring \
+    ufw openresolv wireguard-tools \
+    hyprpolkitagent gnome-keyring 
      
 # devices
     pipewire pipewire-pulse i2c-tools 
     
 # desktop environment
-     mako swaybg hyprlock hypridle slurp grim \
-     swayosd waybar rofi 
+     mako swaybg hyprlock hypridle \
+     slurp grim wl-clipboard wl-clip-persist cliphist \
+     swayosd waybar rofi
+     
     
 # theme and fonts
     xdg-desktop-portal-gtk starship \
