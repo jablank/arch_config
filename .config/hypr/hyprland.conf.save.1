@@ -1,0 +1,61 @@
+monitor=HDMI-A-2,disable
+monitor=HDMI-A-1,2560x1440@59.95Hz,auto,auto
+
+source = ~/.config/hypr/auto_environment.conf
+source = ~/.config/hypr/ruleswindows.conf 
+source = ~/.config/hypr/hotkeybinds.conf
+
+#####################
+###    looks ++   ###
+#####################
+
+# Refer to https://wiki.hypr.land/Configuring/Variables/
+
+ # https://wiki.hypr.land/Configuring/Variables/#general
+general {
+    gaps_in = 5
+    gaps_out = 10
+    border_size = 3
+    col.active_border = rgba(37f4999a)
+    col.inactive_border = rgba(595959aa)
+    resize_on_border = false
+    allow_tearing = false
+    layout = dwindle
+}
+
+# https://wiki.hypr.land/Configuring/Variables/#decoration
+decoration {
+    rounding = 0
+    rounding_power = 2
+    # Change transparency of focused and unfocused windows
+    active_opacity = 1.0
+    inactive_opacity = 1.0
+ blur {
+        enabled = false
+      }
+ shadow {
+        enabled = false
+  #      range = 4
+  #      render_power = 3
+  #      color = rgba(1a1a1aee)
+        }
+}
+
+# window rules for blur zmay cause render issue
+# windowrulev2 = noblur, class:^(.*)$
+
+# ----------------------------------------------------- 
+# fade animation only
+# ----------------------------------------------------- 
+animations {
+    enabled = true
+
+    # 1. Disable all standard window/border animations
+    animation = windows, 0
+    animation = windowsIn, 0
+    animation = windowsOut, 0
+    animation = windowsMove, 0
+    animation = border, 0
+
+    animation = workspaces, 1, 5, default, fade
+}
