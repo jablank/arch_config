@@ -6,7 +6,7 @@
 - **security** | keyring-gnome, hyprpolkitagent, cliphist
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
 - **network** | [ufw firewall](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
-- **screen** | grim, slurp, ddcutil, i2c-tools
+- **hardware** | grim, slurp, ddcutil, i2c-tools
 - **fonts** | ubuntu nerd, adwaita sans
 
 
