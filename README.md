@@ -1,39 +1,43 @@
 
-## **defaults**
--  login | [emptty](https://github.com/tvrzna/emptty)
--  shell |  zsh + zoxide, autosuggest, starship
--  polkit |  keyring-gnome hyprpolkitagent 
--  power  |  ```tuned-adm profile latency-performance``` + hypridle hyprlock
--  network |  [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall) openresolv
--  notifier | [mako](https://github.com/emersion/mako) [swayosd](https://github.com/ErikReider/SwayOSD)
--  status bars |  rofi, waybar 
--  screen |  ddcutil, i2c-tools, bash alias sunX x=0-100.
-#### 
-#### 
-#### 
+## **entry**
+
+- **dm** | [emptty](https://github.com/tvrzna/emptty)
+- **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
+- **keys** | keyring-gnome, hyprpolkitagent
+- **power** | [tuned](https://github.com/redhat-performance/tuned)  + hypridle, hyprlock
+- **network** | [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
+- **screen** | grim, slurp, ddcutil, i2c-tools
+- **fonts** | ubuntu nerd, adwaita sans
+
+
 ####
 
 ```bash
- # enable emptty, zsh newuser, ufw and tuned profile
-emptty zsh zsh-autosuggestions zoxide tuned ufw \
-hyprpolkitagent gnome-keyring \
-openresolv wireguard-tools \
-pipewire pipewire-pulse i2c-tools \
-git flatpak \
+core++ >
+## 
+  sudo systemctl enable --now tuned ufw gnome-keyring-daemon
+## tuned-adm list
+  tuned-adm profile latency-performance
 
-
-# enable swaybg, hypridle, swayosd and waybar 
-swaybg hyprlock hypridle slurp grim \
-mako swayosd waybar rofi \
-ttf-ubuntu-mono-nerd noto-fonts-emoji \
-
-# theming
-xdg-desktop-portal-gtk starship \
-adwaita-qt6 adwaita-qt5 gnome-themes-extra \
- \
-
-# for scripts
-jq bc
+# shell utils
+    zsh zsh-autosuggestions zoxide tuned \ 
+    git flatpak jq bc 
+    
+# keys network
+    ufw hyprpolkitagent gnome-keyring \
+    openresolv wireguard-tools \
+    
+# devices
+    pipewire pipewire-pulse i2c-tools 
+    
+# desktop environment
+    emptty swaybg hyprlock hypridle slurp grim \
+    mako swayosd waybar rofi 
+    
+# theme and fonts
+    xdg-desktop-portal-gtk starship \
+    adwaita-qt6 adwaita-qt5 gnome-themes-extra \
+    ttf-ubuntu-nerd ttf-ubuntu-mono-nerd noto-fonts-emoji
 
 ```
 autostart
@@ -63,7 +67,7 @@ env = XCURSOR_THEME,Bibata-Modern-Ice
 env = XCURSOR_SIZE,32
 
 ```
-### **low movement preset**
+### **hyprland low movement**
 ```bash
   decoration {
   rounding = 0
