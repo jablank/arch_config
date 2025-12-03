@@ -17,21 +17,32 @@ setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_reduce_blanks
 setopt inc_append_history
-
-
 # 2. Autosuggestions (must come AFTER compinit)
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 
 export TZ="America/Phoenix"
 export GTK_THEME=Adwaita:dark
 export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 export QT_STYLE_OVERRIDE=Adwaita-Dark
 export XDG_DATA_DIRS="/usr/local/share:/usr/share:$XDG_DATA_DIRS"
-
 # ---- Editor ----
 export EDITOR="nano"
 export VISUAL="nano"
 
+
+
+
+# ---- super alias ----
+function hypr_edit() {
+    cd ~/.config/hypr || return 1
+    nano hyprland.conf auto_environment.conf hotkeybinds.conf ruleswindows.conf hyprlock.conf hypridle.conf
+}
+
+alias zhypr='hypr_edit'
+
+# Alias the function to the short command
+alias zhypr='hypr_edit'
 # ---- WireGuard aliases ----
 alias wgu='sudo wg-quick up lax'
 alias wgd='sudo wg-quick down lax'
