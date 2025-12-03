@@ -10,21 +10,20 @@
       "format": "┌──────────────────────────────────────────┐"
     },
     {
-      "type": "os",
+      "type": "kernel",
       "key": "  ◈",
       "format": "{2}",
       "keyColor": "#C48E96"
     },
     {
-      "type": "kernel",
+      "type": "host",
       "key": "  ◈",
       "format": "{2}",
       "keyColor": "#C098A5"
     },
     {
-      "type": "host",
+      "type": "disk",
       "key": "  ◈",
-      "format": "{2}",
       "keyColor": "#C48E96"
     },
     {
