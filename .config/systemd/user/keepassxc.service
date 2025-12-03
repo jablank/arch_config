@@ -1,0 +1,16 @@
+[Unit]
+Description=KeePassXC Password Manager
+# Run after the graphical session is fully established
+After=graphical-session.target
+
+[Service]
+# Set Type to 'exec' for simple execution
+Type=exec
+# Replace /usr/bin/keepassxc with the actual path if different
+ExecStart=/usr/bin/keepassxc
+# Ensure the process is cleaned up correctly when the session ends
+KillMode=process
+
+[Install]
+# Tells systemd that this service is wanted by the graphical session
+WantedBy=graphical-session.target
