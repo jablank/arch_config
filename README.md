@@ -3,13 +3,12 @@
 
 - **dm** | [emptty](https://github.com/tvrzna/emptty)
 - **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
-- **security** | keyring-gnome, hyprpolkitagent, *keepassxc
+- **security** | keyring-gnome, hyprpolkitagent
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
 - **network** | [ufw firewall](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
 - **hardware** | grim, slurp, ddcutil, i2c-tools
 - **text** | ubuntu nerd, adwaita sans, cliphist
 
-*keepassxc: either manual autostart or add as a service ~/.config/systemd/user/keepassxc.service + systemctl --user enable keepassxc.service
 
 ####
 
@@ -28,7 +27,7 @@ yay -S --repo
      
 # security
     ufw openresolv wireguard-tools \
-    hyprpolkitagent gnome-keyring keepassxc
+    hyprpolkitagent gnome-keyring
      
 # devices
     pipewire pipewire-pulse i2c-tools 
