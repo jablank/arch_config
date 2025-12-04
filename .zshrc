@@ -36,16 +36,17 @@ export VISUAL="nano"
 # ---- super alias ----
 function hypr_edit() {
     cd ~/.config/hypr || return 1
-    nano hyprland.conf auto_environment.conf hotkeybinds.conf ruleswindows.conf hyprlock.conf hypridle.conf
+    nano autostart.conf environment.conf hotkeybinds.conf hyprland.conf ruleswindows.conf hyprlock.conf hypridle.conf
 }
 
 alias zhypr='hypr_edit'
 
 # Alias the function to the short command
 alias zhypr='hypr_edit'
+
 # ---- WireGuard aliases ----
-alias wgu='sudo wg-quick up lax'
-alias wgd='sudo wg-quick down lax'
+alias wgu='sudo wg-quick up'
+alias wgd='sudo wg-quick down'
 alias wgs='sudo wg show'
 
 # ---- Brightness presets ----
