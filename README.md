@@ -1,4 +1,8 @@
 
+### to do
+```bash
+finsih configuring labwc and find lightweight distro
+```
 ## **arch entry**
 
 - **dm** | [emptty](https://github.com/tvrzna/emptty)
@@ -85,7 +89,3 @@ env = GTK_APPLICATION_PREFER_DARK_THEME=1
   ``` 
 
 
-### to do
-```bash
-notifications
-```
