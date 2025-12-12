@@ -1,9 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=2500
-SAVEHIST=4000
-unsetopt beep
-bindkey -e
+SAVEHIST=3000
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/jab/.zshrc'
@@ -11,6 +9,8 @@ zstyle :compinstall filename '/home/jab/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#ff00ff,bg=cyan,bold,underline"
 
 setopt append_history
 setopt share_history
@@ -31,6 +31,10 @@ export EDITOR="nano"
 export VISUAL="nano"
 
 
+bindkey "\e[1;5C" forward-word
+bindkey "\e[1;5D" backward-word
+bindkey "\e[1;5A" up-line-or-history
+bindkey "\e[1;5B" down-line-or-history
 
 
 # ---- super alias ----
@@ -45,8 +49,8 @@ alias zhypr='hypr_edit'
 alias zhypr='hypr_edit'
 
 # ---- WireGuard aliases ----
-alias wgu='sudo wg-quick up'
-alias wgd='sudo wg-quick down'
+alias wgu='sudo wg-quick up lax'
+alias wgd='sudo wg-quick down lax'
 alias wgs='sudo wg show'
 
 # ---- Brightness presets ----
@@ -74,4 +78,5 @@ alias sun100='ddcutil setvcp 10 100'
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
