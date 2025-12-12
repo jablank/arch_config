@@ -30,7 +30,7 @@ export XDG_DATA_DIRS="/usr/local/share:/usr/share:$XDG_DATA_DIRS"
 export EDITOR="nano"
 export VISUAL="nano"
 
-
+# ---- enable ctrl keybinds ----
 bindkey "\e[1;5C" forward-word
 bindkey "\e[1;5D" backward-word
 bindkey "\e[1;5A" up-line-or-history
