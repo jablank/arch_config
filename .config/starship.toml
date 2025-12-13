@@ -1,0 +1,8 @@
+# ~/.config/starship.toml
+
+# Disable the blank line inserted between shell prompts
+add_newline = false
+
+# Configure the prompt format to put everything on the main line
+# This example uses directory, git branch, and the final character.
+format = '$directory$git_branch$character'
