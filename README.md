@@ -1,7 +1,7 @@
 
 ### to do
 ```bash
-finsih configuring labwc and find lightweight distro
+maybe migrate on main 
 ```
 ## **arch entry**
 
