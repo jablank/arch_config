@@ -2,7 +2,7 @@
 # Rofi skins @ https://github.com/adi1090x/rofi?tab=readme-ov-file
 # https://docs.noctalia.dev/getting-started/keybinds/
 #
-# mainMod + zxcv for workspaces 1-4 for navigation and shift moving windows
+# mainMod + zxcv for workspaces 1-4 for navigation and shift moving wind
 # wasd focus/window swapping
 # reset waybar with hotkey = waybar pkill waybar && exec waybar &  
 
