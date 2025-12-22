@@ -5,25 +5,32 @@ egr
 ```
 ## **arch entry**
 
-- **dm** | [ly](https://github.com/fairyglade/ly) 
+- **dm** | [ly](https://github.com/fairyglade/ly)
 - **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
 - **security** | keyring-gnome, hyprpolkitagent
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
 - **network** | [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
-- **hardware** | grim, slurp, ddcutil, i2c-tools
+- **hw** | grim, slurp, ddcutil, i2c-tools
 - **text** | ubuntu nerd, adwaita sans, cliphist
 
 
 ####
-
+core
 ```bash
-core++ >
 
-1. sudo systemctl enable --now tuned ufw gnome-keyring-daemon
-2. tuned-adm profile latency-performance
-3. modprobe i2c-dev
-  
-yay -S --repo 
+
+ly
+> systemctl enable ly@tty2.service
+> systemctl disable getty@tty2.service
+# enable animations in /etc/ly/config.ini
+
+ddcutil
+> modprobe i2c-dev
+
+
+```
+pkgs
+```bash
 
 # shell utils
     emptty git flatpak jq bc \
