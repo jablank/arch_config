@@ -5,7 +5,7 @@ maybe migrate on main
 ```
 ## **arch entry**
 
-- **dm** | [emptty](https://github.com/tvrzna/emptty)
+- **dm** | [ly](https://github.com/fairyglade/ly) 
 - **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
 - **security** | keyring-gnome, hyprpolkitagent
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
