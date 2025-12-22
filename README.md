@@ -1,7 +1,7 @@
 
 ### to do
 ```bash
-maybe migrate on main 
+egr
 ```
 ## **arch entry**
 
@@ -9,7 +9,7 @@ maybe migrate on main
 - **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
 - **security** | keyring-gnome, hyprpolkitagent
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
-- **network** | [ufw firewall](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
+- **network** | [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
 - **hardware** | grim, slurp, ddcutil, i2c-tools
 - **text** | ubuntu nerd, adwaita sans, cliphist
 
@@ -36,11 +36,10 @@ yay -S --repo
 # devices
     pipewire pipewire-pulse i2c-tools 
     
-# desktop environment
+# desktop
      mako swaybg hyprlock hypridle \
      slurp grim wl-clipboard wl-clip-persist cliphist \
      swayosd waybar rofi
-     
     
 # theme and fonts
     xdg-desktop-portal-gtk starship \
