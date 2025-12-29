@@ -1,9 +1,9 @@
 
-
-
-https://github.com/user-attachments/assets/38c2e101-2626-4bb6-83c5-b048e0286580
-
+https://github.com/user-attachments/assets/677ec282-0ee7-426d-bbad-26deb53a1724
 ### to do
+
+
+
 ```bash
 egr
 ```
