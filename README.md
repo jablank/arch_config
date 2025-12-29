@@ -73,6 +73,10 @@ exec-once = killall -q xdg-desktop-portal-hyprland; killall -q xdg-desktop-porta
 ```
 env
 ```bash
+env = NVD_BACKEND,direct
+env = LIBVA_DRIVER_NAME,nvidia
+env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+
 env = XDG_CURRENT_DESKTOP,Hyprland
 env = XDG_SESSION_TYPE,wayland
 env = XDG_SESSION_DESKTOP,Hyprland
