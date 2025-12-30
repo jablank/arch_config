@@ -1,11 +1,13 @@
 # v0.53
 ### to do
-
-
-
 ```bash
 egr
 ```
+### current
+
+Dec 2025 [noctalia](https://github.com/noctalia-dev)
+
+
 ## **arch entry**
 
 - **dm** | [ly](https://github.com/fairyglade/ly)
