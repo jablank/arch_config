@@ -1,6 +1,4 @@
 # v0.53
-
-https://github.com/user-attachments/assets/677ec282-0ee7-426d-bbad-26deb53a1724
 ### to do
 
 
