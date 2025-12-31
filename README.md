@@ -1,10 +1,9 @@
-# v0.53
+# 
 ### to do
 ```bash
 egr
 ```
 ### current
-
 20251221_1802 [noctalia](https://github.com/noctalia-dev)
 
 
