@@ -54,7 +54,7 @@ pkgs
      swayosd waybar rofi
     
 # theme and fonts
-    xdg-desktop-portal-gtk starship \
+    xdg-desktop-portal-gtk xdg-desktop-portal-hyprland starship \
     adwaita-qt6 adwaita-qt5 gnome-themes-extra \
     ttf-ubuntu-nerd ttf-ubuntu-mono-nerd noto-fonts-emoji
 
