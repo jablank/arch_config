@@ -91,7 +91,7 @@ env = GTK_THEME=Adwaita:dark
 env = GTK_APPLICATION_PREFER_DARK_THEME=1
 
 ```
-### **hyprland low movement**
+### **hyprland low spec mode**
 ```bash
   decoration {
   rounding = 0
