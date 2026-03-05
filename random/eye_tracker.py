@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Stabilized Eye Mask - With tracking error fixes
+Stabilized Eye Mask
 """
 
 import cv2
