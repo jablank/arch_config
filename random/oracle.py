@@ -8,7 +8,7 @@ import random
 BIBLE_PATH = os.path.expanduser("~/Documents/nasb.txt")
 
 def typewriter_print(text):
-    """Prints with slight speed variance for a mechanical feel."""
+    """Prints with slight speed variance."""
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
