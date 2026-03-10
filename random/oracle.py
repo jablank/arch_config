@@ -4,64 +4,49 @@ import sys
 import os
 import random
 
+# Path to your NASB file
 BIBLE_PATH = os.path.expanduser("~/Documents/nasb.txt")
 
 def typewriter_print(text):
-    """Prints with slight speed variance for a more 'possessed' typewriter feel."""
+    """Prints with slight speed variance for a mechanical feel."""
     for char in text:
         sys.stdout.write(char)
         sys.stdout.flush()
-        # Random jitter between 0.02 and 0.08 seconds
+        # The 'jitter' - subtle variation in typing speed
         time.sleep(random.uniform(0.02, 0.08))
     print("\n")
 
-def get_true_entropy(count, max_val):
-    """Fetches 'n' true random numbers from random.org."""
-    url = f"https://www.random.org/integers/?num={count}&min=0&max={max_val}&col=1&base=10&format=plain&rnd=new"
+def get_true_entropy(max_val):
+    """Fetches 1 true random number from random.org based on atmospheric noise."""
+    url = f"https://www.random.org/integers/?num=1&min=0&max={max_val}&col=1&base=10&format=plain&rnd=new"
     try:
         response = requests.get(url, timeout=5)
-        nums = [int(n) for n in response.text.strip().split('\n')]
-        return nums
-    except:
-        # Fallback to local pseudo-rng if internet/API fails
-        return [random.randint(0, max_val) for _ in range(count)]
+        return int(response.text.strip())
+    except Exception as e:
+        # Fallback to local entropy if the connection is interrupted
+        return random.randint(0, max_val)
 
 def main():
     if not os.path.exists(BIBLE_PATH):
         print(f"File not found: {BIBLE_PATH}")
         return
 
+    # Load and filter for lines that actually contain text
     with open(BIBLE_PATH, 'r', encoding='utf-8') as f:
-        all_lines = f.readlines()
+        valid_verses = [line.strip() for line in f.readlines() if len(line.strip()) > 5]
     
-    # Filter for content
-    valid_verses = [line.strip() for line in all_lines if len(line.strip()) > 10]
     total_valid = len(valid_verses)
     
-    print("--- COMMUNICATING WITH THE ORACLE ---")
+    print("--- true rng ---")
     
-    # We ask for 4 numbers: 1 for the verse, 3 for random 'God-Words'
-    random_indices = get_true_entropy(4, total_valid - 1)
+    # Get our one 'True' index
+    verse_idx = get_true_entropy(total_valid - 1)
     
-    if random_indices:
-        # 1. The Verse
-        verse_idx = random_indices[0]
+    if verse_idx is not None:
         verse = valid_verses[verse_idx]
         
-        # 2. The God-Words (extracting a single random word from 3 other verses)
-        god_words = []
-        for i in range(1, 4):
-            other_verse = valid_verses[random_indices[i]].split()
-            word = random.choice(other_verse).strip(".,;:?!()\"")
-            god_words.append(word.upper())
-
-        print(f"[Entropy Source: random.org | Index {verse_idx}]\n")
-        
+        print(f"[Entropy Index: {verse_idx}]\n")
         typewriter_print(verse)
-        
-        # Output the 'God-Words' in a distinct block
-        print("GOD SAYS:")
-        typewriter_print(f"--- {' '.join(god_words)} ---")
     
     print("------------------------------------------")
 
