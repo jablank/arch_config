@@ -17,6 +17,12 @@ egr
 - **hw** | grim, slurp, ddcutil, i2c-tools
 - **text** | ubuntu nerd, adwaita sans, cliphist
 
+#### hardware decoding on nvidia + chromium + enhanced h264ify
+```
+1. cp /usr/share/applications/brave-origin-nightly.desktop ~/.local/share/applications/
+2. Exec=/usr/bin/brave-origin-nightly --enable-features=AcceleratedVideoDecodeLinuxGL,AcceleratedVideoDecodeLinuxZeroCopyGL,VaapiIgnoreDriverChecks,VaapiOnNvidiaGPUs --ozone-platform=wayland %U
+
+```
 
 ####
 core
@@ -101,4 +107,5 @@ env = GTK_APPLICATION_PREFER_DARK_THEME=1
   shadow { enabled = false }
   }
   ``` 
+
 
