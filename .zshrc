@@ -41,11 +41,12 @@ function hypr_edit() {
 
 alias zhypr='hypr_edit'
 
+# ---- NetworkManager VPN aliases ----
+alias wgu='sudo nmcli connection up vegas'
+alias wgd='sudo nmcli connection down vegas'
+alias wgs='sudo nmcli connection show --active | grep -i wireguard; or sudo nmcli device status | grep -i wireguard'
 
-# ---- WireGuard aliases ----
-alias wgu='sudo wg-quick up lax'
-alias wgd='sudo wg-quick down lax'
-alias wgs='sudo wg show'
+
 
 # ---- Brightness presets ----
 alias sun0='ddcutil setvcp 10 0'
