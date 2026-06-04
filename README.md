@@ -4,7 +4,8 @@
 egr
 ```
 ### current
-20251221_1802 [noctalia](https://github.com/noctalia-dev)
+2026 06 04 GNOME
+2025 12 21 [noctalia](https://github.com/noctalia-dev)
 
 
 ## **arch entry**
