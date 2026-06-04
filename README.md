@@ -4,7 +4,8 @@
 egr
 ```
 ### current
-2026 06 04 GNOME
+2026 06 04 gnome
+
 2025 12 21 [noctalia](https://github.com/noctalia-dev)
 
 
