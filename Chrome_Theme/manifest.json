@@ -1,5 +1,5 @@
 {
-   "description": "oled abyssal black",
+   "description": "oled abyssal black for Brave, swap frame and toolbar colors for Chrome",
    "manifest_version": 3,
    "name": "Abyssal Black",
    "theme": {
