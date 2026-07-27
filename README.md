@@ -4,7 +4,7 @@
 egr
 ```
 ### current
-2026 07 27 labwc waiting for xfce4 wayland
+2026 07 27 [labwc](https://github.com/jablank/xfceland) waiting for xfce4 wayland
 
 2026 06 04 gnome
 
