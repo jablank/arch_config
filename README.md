@@ -4,6 +4,8 @@
 egr
 ```
 ### current
+2026 07 27 labwc waiting for xfce4 wayland
+
 2026 06 04 gnome
 
 2025 12 21 [noctalia](https://github.com/noctalia-dev)
