@@ -4,6 +4,8 @@
 egr
 ```
 ### current
+2026 08 10 fedora/gnome
+
 2026 07 27 [labwc](https://github.com/jablank/xfceland) waiting for xfwl4 
 
 2026 06 04 gnome
