@@ -113,5 +113,9 @@ env = GTK_APPLICATION_PREFER_DARK_THEME=1
   shadow { enabled = false }
   }
   ``` 
+## GMKTec G3 Plus dummy plug disable for display manager
 
+in /etc/default/grub
+
+``` GRUB_CMDLINE_LINUX="... quiet splash video=HDMI-A-2:d" ``` 
 
