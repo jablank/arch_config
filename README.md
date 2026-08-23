@@ -16,7 +16,7 @@ egr
 ## **arch entry**
 
 - **dm** | [ly](https://github.com/fairyglade/ly)
-- **shell** | zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship)
+- **shell** | bash + [blesh](https://github.com/akinomyoga/ble.sh) | ``` zsh + [zoxide](https://github.com/ajeetdsouza/zoxide), [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#packages), [starship](https://github.com/starship/starship) ```
 - **keys** | keyring-gnome, hyprpolkitagent
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
 - **network** | [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
