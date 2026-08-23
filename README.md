@@ -16,7 +16,7 @@ egr
 ## **arch entry**
 
 - **dm** | [ly](https://github.com/fairyglade/ly)
-- **shell** | bash + [blesh](https://github.com/akinomyoga/ble.sh) + starship
+- **shell** | bash + [blesh](https://github.com/akinomyoga/ble.sh) + [starship](https://github.com/starship/starship)
 - **keys** | keyring-gnome, hyprpolkitagent
 - **power** | [tuned](https://github.com/redhat-performance/tuned), hypridle, hyprlock
 - **network** | [ufw](https://wiki.archlinux.org/title/Uncomplicated_Firewall), openresolv, wireguard-tools
