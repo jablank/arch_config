@@ -11,7 +11,7 @@
 
 ## GMKTec G3 Plus ACPI fix
 #### Issue
-Phantom display stealing GDM primary output and loss of video signal on wake from sleep.
+Phantom display from dummy plug stealing GDM primary output and loss of video signal on wake from sleep.
 
 #### Solution
 Updated `/etc/default/grub` with kernel parameters:
