@@ -1,9 +1,5 @@
-# 
-### to do
-```bash
-egr
-```
-### current
+
+## Current
 2026 08 10 fedora/gnome
 
 2026 07 27 [labwc](https://github.com/jablank/xfceland) waiting for xfwl4 
@@ -12,6 +8,14 @@ egr
 
 2025 12 21 [noctalia](https://github.com/noctalia-dev)
 
+
+## GMKTec G3 Plus ACPI fix
+#### Issue
+Phantom display stealing GDM primary output and loss of video signal on wake from sleep.
+
+#### Solution
+Updated `/etc/default/grub` with kernel parameters:
+```GRUB_CMDLINE_LINUX="rhgb quiet video=HDMI-A-2:d video=HDMI-A-1:e i915.enable_dc=0 mem_sleep_default=s2idle"```
 
 ## **arch entry**
 
@@ -23,11 +27,8 @@ egr
 - **hw** | grim, slurp, ddcutil, i2c-tools
 - **text** | ubuntu nerd, adwaita sans, cliphist
 
-#### GMKTec G3 Plus dummy plug disable for display manager
 
-in /etc/default/grub
 
-``` GRUB_CMDLINE_LINUX="... quiet splash video=HDMI-A-2:d" ``` 
 
 #### Hardware Decoding on Nvidia + Chromium
 ```
