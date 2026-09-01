@@ -17,6 +17,14 @@ Phantom display stealing GDM primary output and loss of video signal on wake fro
 Updated `/etc/default/grub` with kernel parameters:
 ```GRUB_CMDLINE_LINUX="rhgb quiet video=HDMI-A-2:d video=HDMI-A-1:e i915.enable_dc=0 mem_sleep_default=s2idle"```
 
+
+## Hardware Decoding on Nvidia + Chromium
+```
+1. cp /usr/share/applications/brave-origin-nightly.desktop ~/.local/share/applications/
+2. Exec=/usr/bin/brave-origin-nightly --enable-features=AcceleratedVideoDecodeLinuxGL,AcceleratedVideoDecodeLinuxZeroCopyGL,VaapiIgnoreDriverChecks,VaapiOnNvidiaGPUs --ozone-platform=wayland %U
+
+```
+
 ## **arch entry**
 
 - **dm** | [ly](https://github.com/fairyglade/ly)
@@ -30,51 +38,6 @@ Updated `/etc/default/grub` with kernel parameters:
 
 
 
-#### Hardware Decoding on Nvidia + Chromium
-```
-1. cp /usr/share/applications/brave-origin-nightly.desktop ~/.local/share/applications/
-2. Exec=/usr/bin/brave-origin-nightly --enable-features=AcceleratedVideoDecodeLinuxGL,AcceleratedVideoDecodeLinuxZeroCopyGL,VaapiIgnoreDriverChecks,VaapiOnNvidiaGPUs --ozone-platform=wayland %U
-
-```
 
 
-##### core
-```bash
-
-
-ly
-> systemctl enable ly@tty2.service
-> systemctl disable getty@tty2.service
-# enable animations in /etc/ly/config.ini
-
-ddcutil
-> modprobe i2c-dev
-
-
-```
-##### pkgs
-```bash
-
-# shell utils
-    emptty git flatpak jq bc \
-    zsh zsh-autosuggestions zoxide tuned  
-     
-# security
-    ufw openresolv wireguard-tools \
-    hyprpolkitagent gnome-keyring
-     
-# devices
-    pipewire pipewire-pulse i2c-tools 
-    
-# desktop
-     mako swaybg hyprlock hypridle \
-     slurp grim wl-clipboard wl-clip-persist cliphist \
-     swayosd waybar rofi
-    
-# theme and fonts
-    xdg-desktop-portal-gtk xdg-desktop-portal-hyprland starship \
-    adwaita-qt6 adwaita-qt5 gnome-themes-extra \
-    ttf-ubuntu-nerd ttf-ubuntu-mono-nerd noto-fonts-emoji
-
-```
 
