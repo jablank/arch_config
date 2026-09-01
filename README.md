@@ -17,6 +17,7 @@ Phantom display from dummy plug stealing GDM primary output and loss of video si
 Updated `/etc/default/grub` with kernel parameters:
 ```GRUB_CMDLINE_LINUX="rhgb quiet video=HDMI-A-2:d video=HDMI-A-1:e i915.enable_dc=0 mem_sleep_default=s2idle"```
 
+Dummy plug no longer needed
 
 ## Hardware Decoding on Nvidia + Chromium
 ```
